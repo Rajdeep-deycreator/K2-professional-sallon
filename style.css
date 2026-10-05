@@ -1,0 +1,78 @@
+:root{
+  --black:#000;
+  --coal:#121212;
+  --line:#2a2a2a;
+  --orange:#ff7a00;
+  --orange-soft:#ffb066;
+  --text:#f4f4f4;
+  --muted:#a6a6a6;
+  --display:'Syne','Arial Black',Arial,sans-serif;
+  --body:'DM Sans',Arial,Helvetica,sans-serif;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--black);color:var(--text);font-family:var(--body);line-height:1.6}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+
+/* Navbar */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 5vw;background:var(--black);border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:.5px}
+.brand span{color:var(--orange)}
+.nav-actions{display:flex;gap:10px}
+.btn{font:700 .95rem var(--body);padding:10px 22px;border-radius:999px;border:2px solid var(--orange);cursor:pointer;transition:background .2s,color .2s}
+.btn-login{background:transparent;color:var(--orange)}
+.btn-login:hover{background:rgba(255,122,0,.14)}
+.btn-signup{background:var(--orange);color:var(--black)}
+.btn-signup:hover{background:var(--orange-soft);border-color:var(--orange-soft)}
+
+/* Logo section (anchor of the page) */
+.logo-section{display:flex;flex-direction:column;align-items:center;text-align:center;padding:72px 5vw 64px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 50% 30%,rgba(255,122,0,.16),transparent 60%)}
+.logo-mark{width:min(230px,60vw);height:auto}
+.logo-section h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3.6rem);line-height:1.1;margin:28px 0 12px}
+.logo-section p{max-width:46ch;margin:0 0 28px;color:var(--muted);font-size:1.05rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.hero-cta .btn{padding:13px 30px}
+
+/* Sections */
+section{padding:72px 5vw}
+.wrap{max-width:1080px;margin:0 auto}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:56ch}
+
+/* Services */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{font:500 .9rem var(--body);color:var(--text);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 18px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:var(--black);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.service{display:flex;flex-direction:column;gap:6px;background:var(--coal);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:10px;padding:18px 20px}
+.service[hidden]{display:none}
+.s-cat{font-size:.82rem;color:var(--orange-soft)}
+.s-name{font-family:var(--display);font-weight:700;font-size:1.15rem}
+.s-info{font-size:.92rem;color:var(--muted);flex:1}
+.s-price{font-size:1.4rem;font-weight:700;color:var(--orange)}
+.s-price small{font-size:.8rem;font-weight:400;color:var(--muted)}
+
+/* Academy */
+.academy{background:var(--coal);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.course{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--line)}
+.course:last-child{border-bottom:0}
+.c-name{font-family:var(--display);font-weight:700;font-size:1.2rem}
+.c-meta{color:var(--muted);flex-basis:100%;order:3;margin:0}
+.c-fee{font-weight:700;font-size:1.25rem;color:var(--orange)}
+
+/* Footer */
+footer{padding:40px 5vw;text-align:center;color:var(--muted);font-size:.92rem}
+footer .brand{display:block;margin-bottom:8px;color:var(--text)}
+
+@media (max-width:480px){
+  .nav{padding:12px 4vw}
+  .brand{font-size:1.1rem}
+  .btn{padding:8px 14px;font-size:.85rem}
+  section{padding:56px 5vw}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}

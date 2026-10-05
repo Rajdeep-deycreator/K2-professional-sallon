@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K2 Professional Salon and Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#home">K2 <span>Salon</span></a>
+  <div class="nav-actions">
+    <button class="btn btn-login" type="button">Login</button>
+    <button class="btn btn-signup" type="button">Sign Up</button>
+  </div>
+</header>
+
+<main id="home">
+  <!-- Logo section -->
+  <div class="logo-section">
+    <svg class="logo-mark" viewBox="0 0 200 200" role="img" aria-label="K2 Professional Salon logo">
+      <circle cx="100" cy="100" r="92" fill="#000" stroke="#ff7a00" stroke-width="5"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#ff7a00" stroke-width="1.5" stroke-dasharray="2 7"/>
+      <text x="100" y="122" text-anchor="middle" font-family="Syne,Arial Black,sans-serif" font-weight="800" font-size="76" fill="#ff7a00">K2</text>
+      <path d="M62 146 H138" stroke="#f4f4f4" stroke-width="2"/>
+      <text x="100" y="166" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-weight="700" font-size="11" fill="#f4f4f4" letter-spacing="2">PROFESSIONAL</text>
+    </svg>
+    <h1>Hair, skin and style by trained hands</h1>
+    <p>K2 is a full-service salon with its own academy, so you get expert care and the next generation of stylists learns from the best.</p>
+    <div class="hero-cta">
+      <a class="btn btn-signup" href="#services-women">services for women</a>
+       <a class="btn btn-signup" href="#services-men">services for men</a>
+      <a class="btn btn-login" href="#academy">Join the academy</a>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services-women">
+    <div class="wrap">
+      <h2>Services and rates(women)</h2>
+      <p class="sub">Pick a category to see what we offer. Prices are per visit.</p>
+
+      <div class="filters" id="filters">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="hair" aria-pressed="false">Hair</button>
+        <button class="chip" data-filter="normalWaxing" aria-pressed="false">Normal Waxing</button>
+        <button class="chip" data-filter="ricaWaxing" aria-pressed="false">Rica Waxing</button>
+        <button class="chip" data-filter="facialLotus" aria-pressed="false">Facial Lotus</button>
+        <button class="chip" data-filter="advanceFacialLotus" aria-pressed="false">Advance Facial Lotus</button>
+        
+        <button class="chip" data-filter="threading" aria-pressed="false">Threading</button>
+        <button class="chip" data-filter="nanoplast" aria-pressed="false">Nanoplast Treatment</button>
+        <button class="chip" data-filter="regularPedicure" aria-pressed="false">Regular Pedicure/Manicure</button>
+        <button class="chip" data-filter="crystalPedicure" aria-pressed="false">Crystal Pedicure/Manicure</button>
+        <button class="chip" data-filter="pedipiePedicure" aria-pressed="false">Pedipie Pedicure/Manicure</button>
+        <button class="chip" data-filter="frenchPedicure" aria-pressed="false">French Pedicure/Manicure</button>
+         <button class="chip" data-filter="Schwarzkopf" aria-pressed="false">Schwarzkopf colour</button>
+         <button class="chip" data-filter="loreal" aria-pressed="false">Loreal colour</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Haircut & Wash</span><span class="s-info">Wash, cut and blow-dry for women.</span><span class="s-price">₹500 <small>onwards</small></span></div>
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Baby Haircut</span><span class="s-info">Delicate and gentle haircut for babies.</span><span class="s-price">₹400</span></div>
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Wash Blow(Dry)</span><span class="s-info">Get a professional hair wash and Dried.</span><span class="s-price">₹350 <small>onwards</small></span></div>
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Bangs Cut</span><span class="s-info">(to be added).</span><span class="s-price">₹200</span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">Underarm</span><span class="s-info">Get your underarm waxed by a Professional.</span><span class="s-price">₹200 <small>onwards</small></span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">Full Hand</span><span class="s-info">Get your hands and arms a smooth touch Waxed by professional.</span><span class="s-price">₹500</span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">half Hand</span><span class="s-info">Get your hands or arms a smooth touch Waxed by professional.</span><span class="s-price">₹300</span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">Full Leg</span><span class="s-info">Get your legs a smooth touch Waxed by professional.</span><span class="s-price">₹800</span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">Half leg</span><span class="s-info">Get your leg Waxed by a professional.</span><span class="s-price">₹500</span></div>
+        <div class="service" data-cat="normalWaxing"><span class="s-cat">Normal Waxing</span><span class="s-name">Full Body</span><span class="s-info">Get your Body Waxed by a professional.</span><span class="s-price">₹3,500</span></div>
+          <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name">Rica Underarm</span><span class="s-info">Get your underarm Rica waxed by a Professional.</span><span class="s-price">₹300 <small>onwards</small></span></div>
+        <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name"> Rica Full Hand</span><span class="s-info">Get your hands and arms a smooth touch rica Waxed by professional.</span><span class="s-price">₹800</span></div>
+        <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name">Rica half Hand</span><span class="s-info">Get your hands or arms a smooth touch Rica Waxed by professional.</span><span class="s-price">₹500</span></div>
+        <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name">Rica Full Leg</span><span class="s-info">Get your legs a smooth touch Rics Waxed by professional.</span><span class="s-price">₹1200</span></div>
+        <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name">Rica Half leg</span><span class="s-info">Get your leg Rica Waxed by a professional.</span><span class="s-price">₹800</span></div>
+        <div class="service" data-cat="ricaWaxing"><span class="s-cat">Rica Waxing</span><span class="s-name">Rica Full Body</span><span class="s-info">Get your Body Rica Waxed by a professional.</span><span class="s-price">₹4,500</span></div>
+        
+        <div class="service" data-cat="facialLotus"><span class="s-cat">Facial Lotus</span><span class="s-name">Cleanup</span><span class="s-info"></span><span class="s-price">₹750</span></div>
+        <div class="service" data-cat="facialLotus"><span class="s-cat">Facial Lotus</span><span class="s-name">Basic Facial</span><span class="s-info"></span><span class="s-price">₹1,500</span></div>
+        <div class="service" data-cat="facialLotus"><span class="s-cat">Facial Lotus</span><span class="s-name">Banga Detan</span><span class="s-info"></span><span class="s-price">₹500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">4 layer Anti Ageing</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Retamin Vitamin C Brightening</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Dipigmenton</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Acnex</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Glycolic pro</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="threading"><span class="s-cat">Threading</span><span class="s-name">Eyebrow</span><span class="s-info"></span><span class="s-price">₹50</span></div>
+        <div class="service" data-cat="threading"><span class="s-cat">Threading</span><span class="s-name">Forehead</span><span class="s-info"></span><span class="s-price">₹30</span></div>
+        <div class="service" data-cat="threading"><span class="s-cat">Threading</span><span class="s-name">Upper Lips</span><span class="s-info"></span><span class="s-price">₹30</span></div>
+        <div class="service" data-cat="threading"><span class="s-cat">Threading</span><span class="s-name">chin</span><span class="s-info"></span><span class="s-price">₹30</span></div>
+        <div class="service" data-cat="threading"><span class="s-cat">Threading</span><span class="s-name">Full Face</span><span class="s-info"></span><span class="s-price">₹200</span></div>
+        <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Nanoplast</span><span class="s-info"></span><span class="s-price">₹6,000</span></div>
+        <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Straightening</span><span class="s-info"></span><span class="s-price">₹4,500 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">puming</span><span class="s-info"></span><span class="s-price">₹5,000 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Botox</span><span class="s-info"></span><span class="s-price">₹5,500 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Loreal Hair Spa</span><span class="s-info"></span><span class="s-price">₹1,200 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Botox Hair Spa</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Dandruff Treatment</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+         <div class="service" data-cat="nanoplast"><span class="s-cat">Nanoplast Treatment</span><span class="s-name">Oil Massage</span><span class="s-info"></span><span class="s-price">₹500 <small>onwards</small></span></div>
+          <div class="service" data-cat="regularPedicure"><span class="s-cat">Regular Pedicure/Manicure</span><span class="s-name">Pedicure</span><span class="s-info"></span><span class="s-price">₹1,000 <small>onwards</small></span></div>
+           <div class="service" data-cat="regularPedicure"><span class="s-cat">Regular Pedicure/Manicure</span><span class="s-name">Manicure</span><span class="s-info"></span><span class="s-price">₹700 <small>onwards</small></span></div>
+           <div class="service" data-cat="regularPedicure"><span class="s-cat">Regular Pedicure/Manicure</span><span class="s-name">foot Massage</span><span class="s-info"></span><span class="s-price">₹600 <small>onwards</small></span></div>
+           <div class="service" data-cat="regularPedicure"><span class="s-cat">Regular Pedicure/Manicure</span><span class="s-name">Hand Massage</span><span class="s-info"></span><span class="s-price">₹400 <small>onwards</small></span></div>
+             <div class="service" data-cat="crystalPedicure"><span class="s-cat">Crystal Pedicure/Manicure</span><span class="s-name">Pedicure</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+           <div class="service" data-cat="crystalPedicure"><span class="s-cat">Crystal Pedicure/Manicure</span><span class="s-name">Manicure</span><span class="s-info"></span><span class="s-price">₹1,000 <small>onwards</small></span></div>
+            
+    <div class="service" data-cat="pedipiePedicure"><span class="s-cat">Pedipie Pedicure/Manicure</span><span class="s-name">Pedicure</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+  <div class="service" data-cat="pedipiePedicure"><span class="s-cat">Pedipie Pedicure/Manicure</span><span class="s-name">Manicure</span><span class="s-info"></span><span class="s-price">₹1000 <small>onwards</small></span></div>
+    <div class="service" data-cat="frenchPedicure"><span class="s-cat">French Pedicure/Manicure</span><span class="s-name">Pedicure</span><span class="s-info"></span><span class="s-price">₹1,200 <small>onwards</small></span></div>
+  <div class="service" data-cat="frenchPedicure"><span class="s-cat">French Pedicure/Manicure</span><span class="s-name">Manicure</span><span class="s-info"></span><span class="s-price">₹800 <small>onwards</small></span></div>
+  <div class="service" data-cat="Schwarzkopf"><span class="s-cat">Schwarzkopf colour</span><span class="s-name">Root Touchup</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+  <div class="service" data-cat="Schwarzkopf"><span class="s-cat">Schwarzkopf colour</span><span class="s-name">Global Highlight</span><span class="s-info"></span><span class="s-price">₹6,500 <small>onwards</small></span></div>
+  <div class="service" data-cat="Schwarzkopf"><span class="s-cat">Schwarzkopf colour</span><span class="s-name">Per Highlight</span><span class="s-info"></span><span class="s-price">₹350 (each) <small>onwards</small></span></div>
+  <div class="service" data-cat="Schwarzkopf"><span class="s-cat">Schwarzkopf colour</span><span class="s-name">Balayage</span><span class="s-info"></span><span class="s-price">₹6,500 <small>onwards</small></span></div>
+      </div>
+    </div>
+    <div class="service" data-cat="Schwarzkopf"><span class="s-cat">Schwarzkopf colour</span><span class="s-name">Global Colour</span><span class="s-info"></span><span class="s-price">₹4,500 <small>onwards</small></span></div>
+    <div class="service" data-cat="loreal"><span class="s-cat">Loreal colour</span><span class="s-name">Global Colour</span><span class="s-info"></span><span class="s-price">₹4,000 <small>onwards</small></span></div>
+    <div class="service" data-cat="loreal"><span class="s-cat">Loreal colour</span><span class="s-name">Root Touchup</span><span class="s-info"></span><span class="s-price">₹1,200 <small>onwards</small></span></div>
+    <div class="service" data-cat="loreal"><span class="s-cat">Loreal colour</span><span class="s-name">Global Touchup </span><span class="s-info"></span><span class="s-price">₹6,000 <small>onwards</small></span></div>
+    <div class="service" data-cat="loreal"><span class="s-cat">Loreal colour</span><span class="s-name">Highlight</span><span class="s-info"></span><span class="s-price">₹350(each)<small>onwards</small></span></div>
+    <div class="service" data-cat="loreal"><span class="s-cat">Loreal colour</span><span class="s-name">Balayage</span><span class="s-info"></span><span class="s-price">₹6,000 <small>onwards</small></span></div>
+  </section>
+  
+  <section id="services-men">
+    <div class="wrap">
+      <h2>Services and rates(men)</h2>
+      <p class="sub">Pick a category to see what we offer. Prices are per visit.</p>
+
+      <div class="filters" id="filters">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="hair" aria-pressed="false">Hair & Beard</button>
+        <button class="chip" data-filter="colour" aria-pressed="false">Colour</button>
+        <button class="chip" data-filter="facial" aria-pressed="false">Facial</button>
+        <button class="chip" data-filter="advanceFacialLotus" aria-pressed="false">Advance Facial Makeup</button>
+          <button class="chip" data-filter="treatment" aria-pressed="false">Hair Treatment</button>
+           <button class="chip" data-filter="wellness" aria-pressed="false">Wellness & Relaxation</button></button>
+      </div>
+
+      <div class="grid" id="grid">
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Haircut</span><span class="s-info">Wash, cut and blow-dry for men and women.</span><span class="s-price">₹300 <small>onwards</small></span></div>
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Beard</span><span class="s-info">Trim, shape and line-up.</span><span class="s-price">₹150</span></div>
+        <div class="service" data-cat="hair"><span class="s-cat">Hair</span><span class="s-name">Baby Boy haircut</span><span class="s-info">Gentle and delicate Haircut.</span><span class="s-price">₹250 <small>onwards</small></span></div>
+        <div class="service" data-cat="colour"><span class="s-cat">Colour</span><span class="s-name">Hair Colour</span><span class="s-info"></span><span class="s-price">₹1,500</span></div>
+        <div class="service" data-cat="colour"><span class="s-cat">Colour</span><span class="s-name">Highlight</span><span class="s-info"></span><span class="s-price">₹1,500 <small>onwards</small></span></div>
+        <div class="service" data-cat="facial"><span class="s-cat">Facial</span><span class="s-name">Clean-up</span><span class="s-info"></span></span><span class="s-price">₹750</span></div>
+        <div class="service" data-cat="facial"><span class="s-cat">Facial</span><span class="s-name">Basic Facial</span><span class="s-info"></span><span class="s-price">₹1,500</span></div>
+        <div class="service" data-cat="facial"><span class="s-cat">Facial</span><span class="s-name">Raga Detan</span><span class="s-info"></span><span class="s-price">₹500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">4 layer Anti Ageing</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Retamin Vitamin C Brightening</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Dipigmenton</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Acnex</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="advanceFacialLotus"><span class="s-cat">Advance Facial Lotus</span><span class="s-name">Glycolic pro</span><span class="s-info"></span><span class="s-price">₹2,500</span></div>
+        <div class="service" data-cat="treatment"><span class="s-cat">Hair Treatment</span><span class="s-name">Straightening</span><span class="s-info"></span><span class="s-price">₹1800</span></div>
+         <div class="service" data-cat="treatment"><span class="s-cat">Hair Treatment</span><span class="s-name">Puming</span><span class="s-info"></span><span class="s-price">₹3500</span></div>
+         <div class="service" data-cat="treatment"><span class="s-cat">Hair Treatment</span><span class="s-name">Botox</span><span class="s-info"></span><span class="s-price">₹3500</span></div>
+         <div class="service" data-cat="treatment"><span class="s-cat">Hair Treatment</span><span class="s-name">Hair Spa</span><span class="s-info"></span><span class="s-price">₹1000</span></div>
+         <div class="service" data-cat="treatment"><span class="s-cat">Hair Treatment</span><span class="s-name">Dandruff Treatment</span><span class="s-info"></span><span class="s-price">₹1500</span></div>
+        <div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Pedicure Basic</span><span class="s-info"></span><span class="s-price">₹800</span></div>
+        <div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Basic Manicure</span><span class="s-info"></span><span class="s-price">₹650<small>onwards</small></span></div>
+        <div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Advance Pedicure</span><span class="s-info"></span><span class="s-price">₹1,200</span></div>
+<div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name"> Advance Manicure</span><span class="s-info"></span><span class="s-price">₹800<small>onwards</small></span></div>
+<div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Oil Massage</span><span class="s-info"></span><span class="s-price">₹500</span></div>
+<div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Foot Massage</span><span class="s-info"></span><span class="s-price">₹400<small>onwards</small></span></div>
+<div class="service" data-cat="wellness"><span class="s-cat">Wellness & Relaxation</span><span class="s-name">Hand Massage</span><span class="s-info"></span><span class="s-price">₹300<small>onwards</small></span></div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Academy -->
+  <section id="academy" class="academy">
+    <div class="wrap">
+      <h2>K2 Academy</h2>
+      <p class="sub">Hands-on courses taught by working stylists, with certificates on completion.</p>
+
+      <div class="course"><span class="c-name">Professional hair styling</span><span class="c-fee">₹45,000</span><p class="c-meta">3 months. Cutting, colouring, blow-dry and salon practice.</p></div>
+      <div class="course"><span class="c-name">Makeup artistry</span><span class="c-fee">₹35,000</span><p class="c-meta">2 months. Day, party and bridal looks on live models.</p></div>
+      <div class="course"><span class="c-name">Skin and beauty therapy</span><span class="c-fee">₹30,000</span><p class="c-meta">2 months. Facials, clean-ups, nails and client handling.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="brand">K2 <span style="color:var(--orange)">Salon</span></span>
+  K2 Professional Salon and Academy. Alphonsa School Road, Kalamjote,Shusrata Nagar.
+  <a href="https://wa.me/917063061181" style="color:green">+91 70630 61181</a>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
