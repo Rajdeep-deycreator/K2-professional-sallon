@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 - Sign Up</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/accounting/login/login.css">
+</head>
+<body class="k2-auth-body">
+    <div class="k2-auth-container">
+        <div class="k2-auth-card">
+            <div class="k2-logo">
+                <h1>K2</h1>
+                <p>Create your account</p>
+            </div>
+
+            <form id="signupForm" class="k2-form">
+                <div class="k2-input-group">
+                    <label for="Name">Full Name</label>
+                    <input type="text" id="Name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="k2-input-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" placeholder="Enter your email" required>
+                </div>
+                <div class="k2-input-group">
+                    <label for="ph">Phone Number</label>
+                    <input type="tel" id="ph" placeholder="Enter your Phone Number" required>
+                </div>
+
+                <div class="k2-input-group">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" placeholder="Create a password" required>
+                </div>
+
+                <div class="k2-input-group">
+                    <label for="ConfirmPassword">Confirm Password</label>
+                    <input type="password" id="ConfirmPassword" placeholder="Confirm your password" required>
+                </div>
+
+                <input type="button" class="k2-btn-primary" onclick="signup()" value="Sign Up"></input>
+
+                <p class="k2-switch-text">
+                    Already have an account? <a href="/accounting/login/login.html" class="k2-link-orange">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<!-- Firebase Firestore -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+<script src="/main.js"></script>
+<script src="/accounting/login/login.js"></script>
+<script src="/accounting/signup/signup.js"></script>
+</html>

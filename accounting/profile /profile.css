@@ -1,0 +1,169 @@
+/* ===== K2 Profile - Black & Orange Theme ===== */
+
+.k2-profile-body {
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.k2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.k2-logo-small {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.profile-hero {
+  position: relative;
+  background: #111111;
+  padding: 60px 20px 50px;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid #222222;
+}
+
+.glow-orange {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.25) 0%, transparent 70%);
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(20px);
+}
+
+.glow-orange-2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.15) 0%, transparent 70%);
+  bottom: -50px;
+  right: -50px;
+}
+
+.profile-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.avatar-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background: #ff6a00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.profile-name {
+  color: #ff6a00;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 5px 0;
+  text-shadow: 0 0 15px rgba(255, 106, 0, 0.5);
+}
+
+.profile-email {
+  color: #9a9a9a;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Main Box */
+.profile-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-box {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Tabs */
+.profile-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  color: #888888;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #ff6a00;
+  color: #000000;
+  border-color: #ff6a00;
+  font-weight: 600;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.booking-list .empty-text {
+  color: #666666;
+  font-size: 14px;
+}
+
+.membership-card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px dashed #333333;
+}
+
+/* Logout */
+.k2-btn-logout {
+  width: 100%;
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #ff3b3b;
+  color: #ff3b3b;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.k2-btn-logout:hover {
+  background: #ff3b3b;
+  color: #ffffff;
+}

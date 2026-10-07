@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 - Profile</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/accounting/profile /profile.css">
+</head>
+<body class="k2-profile-body">
+    
+    <header class="k2-header">
+        <a href="/" class="k2-logo-small">K2</a>
+        <a href="/" class="btn btn-signup">Home</a>
+    </header>
+
+    <!-- TOP SECTION - Dark with orange glow -->
+    <section class="profile-hero">
+        <div class="glow-orange"></div>
+        <div class="glow-orange-2"></div>
+        <div class="profile-hero-content">
+            <div class="avatar-circle" id="avatarLetter">K</div>
+            <h1 id="profileName" class="profile-name">Loading...</h1>
+            <p id="profileEmail" class="profile-email">loading@email.com</p>
+        </div>
+    </section>
+
+    <!-- BOX SECTION -->
+    <section class="profile-container">
+        <div class="profile-box">
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="bookings">My Bookings</button>
+                <button class="tab-btn" data-tab="previous">Previous Bookings</button>
+                <button class="tab-btn" data-tab="membership">Membership</button>
+            </div>
+
+            <div class="tab-content active" id="bookings">
+                <h3>Current Bookings</h3>
+                <div id="currentBookingsList" class="booking-list">
+                    <p class="empty-text">No active bookings found.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="previous">
+                <h3>Previous Bookings</h3>
+                <div id="previousBookingsList" class="booking-list">
+                    <p class="empty-text">No previous history.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="membership">
+                <h3>Membership Plan</h3>
+                <div class="membership-card">
+                    <p>Status: <span id="membershipStatus">Free</span></p>
+                    <p>Valid Till: <span id="membershipValid">-</span></p>
+                    <button class="k2-btn-primary" style="margin-top:15px;">Upgrade to Pro</button>
+                </div>
+            </div>
+
+            <button class="k2-btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </section>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="/firebase.js"></script>
+<script src="/main.js"></script>
+<script src="/accounting/profile /profile.js"></script>
+</html>

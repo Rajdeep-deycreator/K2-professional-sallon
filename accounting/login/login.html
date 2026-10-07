@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 - Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/accounting/login/login.css">
+</head>
+<body class="k2-auth-body">
+    <div class="k2-auth-container">
+        <div class="k2-auth-card">
+            <div class="k2-logo">
+                <h1>K2</h1>
+                <p>Welcome back</p>
+            </div>
+
+            <form id="loginForm" class="k2-form">
+                <div class="k2-input-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="k2-input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+
+                <div class="k2-options">
+                    <label class="k2-checkbox">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="k2-link">Forgot password?</a>
+                </div>
+
+                <input type="button" class="k2-btn-primary" onclick="loginbtn()" value="Login">
+
+                <p class="k2-switch-text">
+                    Don't have an account? <a href="/accounting/signup/signup.html" class="k2-link-orange">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- Firebase Firestore -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+<script src="/main.js"></script>
+  <script src="/accounting/login/login.js"></script
+  >
+</html>
