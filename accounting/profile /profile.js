@@ -26,3 +26,11 @@ var profileName= document.getElementById("profileName")
 profileName.innerHTML=name
 var profileEmail=document.getElementById("profileEmail")
 profileEmail.innerHTML= localStorage.getItem("K2Email")
+
+function logout(param) {
+    auth.signOut()
+    localStorage.removeItem("loginStatus")
+    localStorage.removeItem("K2Email")
+    window.location.replace("/")
+}
+
