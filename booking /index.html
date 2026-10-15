@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K2 Booking</title>
+  <link rel="stylesheet" href="/booking /booking.css">
+</head>
+<body>
+  <div class="card">
+    <h1>K2 SALON</h1>
+
+    <form id="form">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter name" required>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone" required>
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter email" required>
+
+      <label>Booking Date</label>
+      <input type="date" id="date" required>
+      <label for="gender">Select a service for</label>
+      <select name="gender" id="gender">
+        <option value="">SEX</option>
+        <option value="male">Male</option>
+        <option value="femalee">Female</option>
+      </select>
+      <label for="service-category">Select Category</label>
+      <select name="service-category" id="service-category">
+        
+      </select>
+      <label for="serv">Select</label>
+      <div name="serv" id="serv">
+        
+      </div>
+
+      <label>Time Slots</label>
+      <div class="slots" id="slots">
+       <button type="button" class="slot" id="10:30 AM">10:30 AM</button>
+<button type="button" class="slot" id="11:00 AM">11:00 AM</button>
+<button type="button" class="slot" id="11:30 AM">11:30 AM</button>
+<button type="button" class="slot" id="12:00 PM">12:00 PM</button>
+<button type="button" class="slot" id="12:30 PM">12:30 PM</button>
+<button type="button" class="slot" id="01:00 PM">01:00 PM</button>
+<button type="button" class="slot" id="01:30 PM">01:30 PM</button>
+<button type="button" class="slot" id="02:00 PM">02:00 PM</button>
+<button type="button" class="slot" id="02:30 PM">02:30 PM</button>
+<button type="button" class="slot" id="03:00 PM">03:00 PM</button>
+<button type="button" class="slot" id="03:30 PM">03:30 PM</button>
+<button type="button" class="slot" id="04:00 PM">04:00 PM</button>
+<button type="button" class="slot" id="04:30 PM">04:30 PM</button>
+<button type="button" class="slot" id="05:00 PM">05:00 PM</button>
+<button type="button" class="slot" id="05:30 PM">05:30 PM</button>
+<button type="button" class="slot" id="06:00 PM">06:00 PM</button>
+<button type="button" class="slot" id="06:30 PM">06:30 PM</button>
+<button type="button" class="slot" id="07:00 PM">07:00 PM</button>
+<button type="button" class="slot" id="07:30 PM">07:30 PM</button>
+<button type="button" class="slot" id="08:00 PM">08:00 PM</button>
+      </div>
+
+      <input type="button" onclick="book()" class="submit" value="Book Now"></input>
+      <div id="subtotal">
+        
+      </div>
+    </form>
+
+    <div id="output"></div>
+  </div>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  
+  <!-- Firebase Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+<script src="/main.js"></script>
+<script src="/booking /booking.js"></script>
+</body>
+</html>

@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById(target).classList.add('active');
         });
     });
+    retriveService()
 
 });
 
@@ -33,4 +34,21 @@ function logout(param) {
     localStorage.removeItem("K2Email")
     window.location.replace("/")
 }
-
+function retriveService(){
+    var current=document.getElementById("currentBookingsList")
+    db.collection("Users").doc(email). collection("active_booking").where("status","==","active").get().then((data)=>{
+        current.innerHTML=""
+        data.forEach((information)=>{
+            var card=document.createElement('div')
+            var data=information.data()
+            console.log(data)
+            var servic= Object.entries(data.servic).map(([name,price])=>`${name}:₹${price}`).join("br")
+            card.innerHTML=`<h1><span>${information.id}</span></h1><p>Service:<br>${servic}<br>Ammount:<span>${data.totalamount}</span></p>`
+            card.id="serviceCard"
+        
+            current.appendChild(card)
+        })
+    }).catch((error)=>{
+        console.log(error.message)
+    })
+}

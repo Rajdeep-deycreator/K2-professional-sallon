@@ -20,6 +20,7 @@ const chips = document.querySelectorAll('.chip');
       var nav=document.getElementById("nav-actions")
       retrive(email)
       nav.innerHTML=""
+      
     }
   }
   
@@ -28,6 +29,9 @@ const chips = document.querySelectorAll('.chip');
       if (snap.exists){
         var userData=snap.data()
         name=userData.Name
+        ph=userData.Phone_Number
+        localStorage.setItem("k2ph",ph)
+        console.log(ph)
         console.log(name)
         var nav=document.getElementById("nav-actions")
         nav.innerHTML="<a href='/accounting/profile /profile.html' class='btn btn-signup'>"+name+"</a>"

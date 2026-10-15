@@ -131,7 +131,7 @@
 
 /* Tab Content */
 .tab-content {
-  display: none;
+  display:none;
 }
 
 .tab-content.active {
@@ -166,4 +166,19 @@
 .k2-btn-logout:hover {
   background: #ff3b3b;
   color: #ffffff;
+}
+
+#serviceCard{
+  background-color: #000;
+  border: 2px solid #ff6600;
+  margin: 10px;
+  border-radius: 8px;
+}
+#serviceCard h1{
+  color:#ff6600;
+  text-align: center;
+}
+#serviceCard span{
+  text-align: right;
+  color: #ff6600;
 }
