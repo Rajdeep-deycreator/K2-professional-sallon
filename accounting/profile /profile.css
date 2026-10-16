@@ -173,6 +173,7 @@
   border: 2px solid #ff6600;
   margin: 10px;
   border-radius: 8px;
+  padding:10px;
 }
 #serviceCard h1{
   color:#ff6600;
@@ -181,4 +182,10 @@
 #serviceCard span{
   text-align: right;
   color: #ff6600;
+}
+#serviceSummary{
+  border:2px dashed #595959;
+  background: #000000;
+  padding: 10px;
+  margin: 10px;
 }

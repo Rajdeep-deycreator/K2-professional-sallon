@@ -34,7 +34,7 @@ const chips = document.querySelectorAll('.chip');
         console.log(ph)
         console.log(name)
         var nav=document.getElementById("nav-actions")
-        nav.innerHTML="<a href='/accounting/profile /profile.html' class='btn btn-signup'>"+name+"</a>"
+        nav.innerHTML="<a class='btn btn-login' href='/booking /index.html'>book now</a><a href='/accounting/profile /profile.html' class='btn btn-signup'>"+name+"</a>"
       }else{
         console.log("no data")
       }

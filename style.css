@@ -68,7 +68,9 @@ h2{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem)
 /* Footer */
 footer{padding:40px 5vw;text-align:center;color:var(--muted);font-size:.92rem}
 footer .brand{display:block;margin-bottom:8px;color:var(--text)}
-
+.book{
+  color: #ff6600;
+}
 @media (max-width:480px){
   .nav{padding:12px 4vw}
   .brand{font-size:1.1rem}

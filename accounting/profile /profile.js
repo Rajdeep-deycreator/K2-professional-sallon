@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     retriveService()
+    retrivePreviousService()
 
 });
 
@@ -43,7 +44,7 @@ function retriveService(){
             var data=information.data()
             console.log(data)
             var servic= Object.entries(data.servic).map(([name,price])=>`${name}:₹${price}`).join("br")
-            card.innerHTML=`<h1><span>${information.id}</span></h1><p>Service:<br>${servic}<br>Ammount:<span>${data.totalamount}</span></p>`
+            card.innerHTML=`<h1><span>${information.id}</span></h1><div id="serviceSummary"<p>Service:<br>${servic}<br></div>Ammount:<span>\t ${data.totalamount}</span></p>`
             card.id="serviceCard"
         
             current.appendChild(card)
@@ -52,3 +53,23 @@ function retriveService(){
         console.log(error.message)
     })
 }
+
+function retrivePreviousService(){
+    var previous=document.getElementById("previousBookingsList")
+    db.collection("Users").doc(email). collection("active_booking").where("status","==","finished").get().then((data)=>{
+        previous.innerHTML=""
+        data.forEach((information)=>{
+            var card=document.createElement('div')
+            var data=information.data()
+            console.log(data)
+            var servic= Object.entries(data.servic).map(([name,price])=>`${name}:₹${price}`).join("br")
+            card.innerHTML=`<h1><span>\t ${information.id}</span></h1><div id="serviceSummary"><p>Service:<br>${servic}<br></div>Ammount:<span>${data.totalamount}</span></p>`
+            card.id="serviceCard"
+        
+            previous.appendChild(card)
+        })
+    }).catch((error)=>{
+        console.log(error.message)
+    })
+}
+
