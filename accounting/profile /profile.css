@@ -133,6 +133,10 @@
 .tab-content {
   display:none;
 }
+.tab-content p{
+  color: #989898;
+  text-align: center;
+}
 
 .tab-content.active {
   display: block;
