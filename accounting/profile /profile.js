@@ -63,7 +63,7 @@ function retrivePreviousService(){
             var data=information.data()
             console.log(data)
             var servic= Object.entries(data.servic).map(([name,price])=>`${name}:₹${price}`).join("br")
-            card.innerHTML=`<h1><span>\t ${information.id}</span></h1><div id="serviceSummary"><p>Service:<br>${servic}<br></div>Ammount:<span>${data.totalamount}</span></p>`
+            card.innerHTML=`<h1><span>\t ${information.id}</span></h1><div id="serviceSummary"><p>Service:<br>${servic}<br></div>Ammount:<span>${data.totalamount}</span><br><br><a style='color:#ffb066' href='https://www.google.com/maps/search/?api=1&query=K2+Professional+Family+Salon+%26+Academy+Siliguri&query_place_id=1778309569596309'>Leave A review 😊</a></p>`
             card.id="serviceCard"
         
             previous.appendChild(card)
