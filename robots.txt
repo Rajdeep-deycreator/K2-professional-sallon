@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Private folders - Google ko mat dikhana
+Disallow: /admin/
+Disallow: /accounting/
+Disallow: /refrence image/
+Disallow: /firebase.js
+
+Sitemap: https://k2saloon.in/sitemap.xml
