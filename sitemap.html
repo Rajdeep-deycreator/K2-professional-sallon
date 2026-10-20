@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Site Map | K2 Professional Salon and Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .sitemap-hero{padding:64px 5vw 40px;text-align:center;border-bottom:1px solid var(--line);background:radial-gradient(circle at 50% 20%,rgba(255,122,0,.16),transparent 60%)}
+  .sitemap-hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3.2rem);margin:0 0 10px}
+  .sitemap-hero p{max-width:60ch;margin:0 auto;color:var(--muted)}
+  .sitemap-wrap{max-width:1080px;margin:0 auto;padding:56px 5vw 80px}
+  .map-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .map-col{background:var(--coal);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:12px;padding:22px 22px 24px}
+  .map-col h2{font-family:var(--display);font-size:1.2rem;margin:0 0 4px;display:flex;align-items:center;gap:8px}
+  .map-col .tag{font:700 .7rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--orange-soft)}
+  .map-col > p.desc{color:var(--muted);font-size:.9rem;margin:0 0 16px}
+  .map-tree{list-style:none;margin:0;padding:0}
+  .map-tree ul{list-style:none;margin:6px 0 0;padding-left:16px;border-left:1px dashed var(--line)}
+  .map-tree li{position:relative;padding:6px 0 6px 2px}
+  .map-tree a{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--text);padding:4px 0;transition:color .2s}
+  .map-tree a:hover{color:var(--orange)}
+  .map-tree a .dot{width:7px;height:7px;border-radius:50%;background:var(--orange);flex:none}
+  .map-tree .path{font:.72rem var(--body);color:var(--muted);display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding-left:15px}
+  .map-tree .sub-label{font-size:.82rem;color:var(--muted)}
+  .map-tree .badge{font:700 .62rem var(--body);letter-spacing:.05em;text-transform:uppercase;color:var(--black);background:var(--orange-soft);border-radius:999px;padding:1px 8px}
+  .legend{display:flex;flex-wrap:wrap;gap:18px;margin:0 0 32px;color:var(--muted);font-size:.85rem}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .legend .l-public{background:var(--orange)}
+  .legend .l-user{background:#4aa3ff}
+  .legend .l-admin{background:#59d18b}
+  .flow{margin-top:40px;background:var(--coal);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .flow h2{font-family:var(--display);font-size:1.2rem;margin:0 0 14px}
+  .flow-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px;color:var(--muted);font-size:.9rem}
+  .flow-row strong{color:var(--text)}
+  .flow-row .arrow{color:var(--orange);font-weight:700}
+  .sitemap-footer{text-align:center;padding:40px 5vw 64px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  .back-home{display:inline-block;margin-top:18px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">K2 <span>Salon</span></a>
+  <div class="nav-actions">
+    <a href="index.html" class="btn btn-login">Home</a>
+    <a href="booking /index.html" class="btn btn-signup">book now</a>
+  </div>
+</header>
+
+<main>
+  <section class="sitemap-hero">
+    <h1>Site Map</h1>
+    <p>Every page of the K2 Professional Salon and Academy website, grouped by area. Click any link to jump straight to that page or section.</p>
+  </section>
+
+  <div class="sitemap-wrap">
+    <div class="legend">
+      <span><i class="l-public"></i> Public site</span>
+      <span><i class="l-user"></i> Customer account</span>
+      <span><i class="l-admin"></i> Admin panel</span>
+    </div>
+
+    <div class="map-grid">
+
+      <!-- PUBLIC -->
+      <div class="map-col">
+        <span class="tag">Public</span>
+        <h2>Visitor Pages</h2>
+        <p class="desc">Open to everyone — browse services, learn about the academy and book an appointment.</p>
+        <ul class="map-tree">
+          <li>
+            <a href="index.html"><span class="dot"></span> Home</a>
+            <span class="path">/index.html</span>
+            <ul>
+              <li><a href="index.html#home">Hero / Logo</a><span class="path">#home</span></li>
+              <li><a href="index.html#services-women">Services &amp; Rates (Women)</a><span class="path">#services-women</span></li>
+              <li><a href="index.html#services-men">Services &amp; Rates (Men)</a><span class="path">#services-men</span></li>
+              <li><a href="index.html#academy">K2 Academy</a><span class="path">#academy</span></li>
+            </ul>
+          </li>
+          <li>
+            <a href="booking /index.html"><span class="dot"></span> Booking</a>
+            <span class="path">/booking /index.html</span>
+          </li>
+          <li>
+            <a href="accounting/login/login.html"><span class="dot"></span> Login</a>
+            <span class="path">/accounting/login/login.html</span>
+          </li>
+          <li>
+            <a href="accounting/signup/signup.html"><span class="dot"></span> Sign Up</a>
+            <span class="path">/accounting/signup/signup.html</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- USER -->
+      <div class="map-col">
+        <span class="tag">Customer</span>
+        <h2>My Account</h2>
+        <p class="desc">Available after a customer logs in or signs up.</p>
+        <ul class="map-tree">
+          <li>
+            <a href="accounting/profile /profile.html"><span class="dot"></span> Profile <span class="badge">auth</span></a>
+            <span class="path">/accounting/profile /profile.html</span>
+            <ul>
+              <li><a href="accounting/profile /profile.html">My Bookings</a><span class="path">tab: bookings</span></li>
+              <li><a href="accounting/profile /profile.html">Previous Bookings</a><span class="path">tab: previous</span></li>
+              <li><a href="accounting/profile /profile.html">Membership</a><span class="path">tab: membership</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ADMIN -->
+      <div class="map-col">
+        <span class="tag">Admin</span>
+        <h2>Admin Panel</h2>
+        <p class="desc">Protected area for salon staff. Requires the admin login.</p>
+        <ul class="map-tree">
+          <li>
+            <a href="admin/login/index.html"><span class="dot"></span> Admin Login <span class="badge">auth</span></a>
+            <span class="path">/admin/login/index.html</span>
+          </li>
+          <li>
+            <a href="admin/dashboard /index.html"><span class="dot"></span> Dashboard <span class="badge">auth</span></a>
+            <span class="path">/admin/dashboard /index.html</span>
+            <ul>
+              <li><a href="admin/dashboard /index.html#allUsers">All Users</a><span class="path">#allUsers</span></li>
+              <li><a href="admin/dashboard /index.html#servicesMen">Services For Men</a><span class="path">#servicesMen</span></li>
+              <li><a href="admin/dashboard /index.html#servicesWomen">Services For Women</a><span class="path">#servicesWomen</span></li>
+            </ul>
+          </li>
+          <li>
+            <a href="admin/bookings/booking.html"><span class="dot"></span> Bookings <span class="badge">auth</span></a>
+            <span class="path">/admin/bookings/booking.html</span>
+          </li>
+          <li>
+            <a href="admin/management /addservice.html"><span class="dot"></span> Add Service <span class="badge">auth</span></a>
+            <span class="path">/admin/management /addservice.html</span>
+          </li>
+          <li>
+            <a href="admin/membership /request /request.html"><span class="dot"></span> Membership Requests <span class="badge">auth</span></a>
+            <span class="path">/admin/membership /request /request.html</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- FLOW -->
+    <div class="flow">
+      <h2>How the pages connect</h2>
+      <div class="flow-row">
+        <strong>Customer flow</strong>
+        <span class="arrow">&rarr;</span> Home
+        <span class="arrow">&rarr;</span> Sign Up
+        <span class="arrow">&rarr;</span> Login
+        <span class="arrow">&rarr;</span> Booking
+        <span class="arrow">&rarr;</span> Profile
+        <span class="arrow">&rarr;</span> Logout
+      </div>
+      <div class="flow-row">
+        <strong>Admin flow</strong>
+        <span class="arrow">&rarr;</span> Admin Login
+        <span class="arrow">&rarr;</span> Dashboard
+        <span class="arrow">&rarr;</span> Bookings / Add Service / Membership Requests
+        <span class="arrow">&rarr;</span> Logout
+      </div>
+    </div>
+  </div>
+
+  <footer class="sitemap-footer">
+    K2 Professional Salon and Academy &middot; Alphonsa School Road, Kalamjote, Shusrata Nagar
+    <br>
+    <a class="btn btn-signup back-home" href="index.html">Back to Home</a>
+  </footer>
+</main>
+
+</body>
+</html>
