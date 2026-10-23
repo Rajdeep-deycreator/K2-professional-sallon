@@ -95,12 +95,12 @@ let serviceText = Object.entries(data.servic).map(([name,price]) => `${name}:${p
       method: "POST",
       headers: {'Content-Type':'application/json'},
       body:JSON.stringify({
-        "to":"k2sallon@gmail.com",
-        "subject":"New Booking(testing)",
+        "to":"jitenlimbu40@gmail.com",
+        "subject":"New Booking",
         "message":"<h1>"+data.name+"</h1><p>date:"+data.date+"<br>time:"+data.time+"<br>Service:"+serviceText+"<br>total:"+data.totalamount+"</p><h4>Email:"+data.email+"<br>Phone:"+data.phone+"</h4>"
       })
     }).then(()=>{
-        ///window.location.reload()
+        window.location.reload()
       })
   }).catch((error)=>{
     alert(error.message)
